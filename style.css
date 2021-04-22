@@ -1,0 +1,23 @@
+.main-wrapper {
+    max-width: 40%;
+    margin: 0 auto;
+}
+
+.input-wrapper {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.display {
+    text-align: right;
+}
+.buttons-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+button {
+    height: 80px;
+    width: 80px;
+}

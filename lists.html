@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="myList">
+        
+    </ul>
+    <button onclick="displayList()">Display My List</button>
+    <input type="text" id="listItem"/>
+    <button onClick="addToList()">Submit</button>
+</body>
+</html>
+
+<script>
+    var myList = ["List Item 1", "List Item 2"]
+    var inputRef = document.getElementById("listItem");
+    var list = document.getElementById("myList");
+
+    function addToList() {
+
+        myList.push(inputRef.value);
+        list.innerHTML = "";
+        displayList();
+    }
+
+    function displayList() {
+        for (i =0; i < myList.length; i++ ){
+            list.innerHTML = list.innerHTML + "<li>" + myList[i] + "</li>";
+        }
+    }
+</script>
